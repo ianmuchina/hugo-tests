@@ -1,0 +1,10 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "My New Hugo Site"
+theme: "smol"
+
+caches:
+  # Cache resources infinitely
+  getresource:
+    dir: :resourceDir/
+    maxAge: -1

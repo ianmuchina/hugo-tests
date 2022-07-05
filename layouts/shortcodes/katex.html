@@ -1,6 +1,4 @@
 {{ $url := printf "https://katex-api-test.deno.dev/?expression=%s&rawHTML=true" (urlquery .Inner) }}
 {{ with resources.GetRemote $url }}
-<div>
-    {{ .Content | safeHTML }}
-</div>    
+{{ .Content | safeHTML }}
 {{ end }}
